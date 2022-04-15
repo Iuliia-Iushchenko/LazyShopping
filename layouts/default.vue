@@ -4,7 +4,6 @@
       <div class="container">
         <Header />
         <Nuxt keep-alive />
-        <Footer />
       </div>
     </main>
   </div>
