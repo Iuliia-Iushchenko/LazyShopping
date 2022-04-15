@@ -1,5 +1,7 @@
 <template>
-  <div class="d-flex flex-row justify-content-between align-items-center mt-3">
+  <div
+    class="d-flex flex-row justify-content-between align-items-center mt-3 mb-4"
+  >
     <select
       v-model="selectedItem"
       class="form-select w-75"

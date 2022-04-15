@@ -34,7 +34,7 @@
       <nav
         v-show="isAllproducts"
         aria-label="Page navigation example"
-        class="mt-3"
+        class="mb-5"
       >
         <ul class="pagination justify-content-end">
           <li
@@ -52,7 +52,7 @@
 
       <div
         v-if="selectedProducts.length !== 0"
-        class="row row-cols-1 row-cols-md-5 g-4 mt-4"
+        class="row row-cols-1 row-cols-md-5 g-4"
       >
         <ProductItem
           v-for="product of selectedProducts"
@@ -63,10 +63,7 @@
       </div>
 
       <!-- Searched Products -->
-      <div
-        v-if="searchInput !== ''"
-        class="row row-cols-1 row-cols-md-5 g-4 mt-4"
-      >
+      <div v-if="searchInput !== ''" class="row row-cols-1 row-cols-md-5 g-4">
         <ProductItem
           v-for="product of searchedProducts"
           :key="product.id"
@@ -75,7 +72,7 @@
       </div>
 
       <!-- All products -->
-      <div v-show="isAllproducts" class="row row-cols-1 row-cols-md-5 g-4 mt-4">
+      <div v-show="isAllproducts" class="row row-cols-1 row-cols-md-5 g-4">
         <ProductItem
           v-for="product of products"
           :key="product.id"
