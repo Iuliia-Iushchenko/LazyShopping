@@ -14,7 +14,7 @@
       </option>
     </select>
     <button class="btn btn-primary" type="submit" @click="showAllProducts">
-      Show all products
+      Show all
     </button>
   </div>
 </template>
